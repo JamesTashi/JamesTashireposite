@@ -1,0 +1,19 @@
+<h1>
+<pre> 
+
+Hey, can we verify if you are a human? This step only takes a few seconds and you will be directed after you complete this step.
+</pre>
+
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6Lcw0-EZAAAAAFDI1i7jr99I_k41iOOvoFecfsXs"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
