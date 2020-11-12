@@ -22,38 +22,6 @@ Thanks!
       <div class="g-recaptcha" data-sitekey="6Lcw0-EZAAAAAFDI1i7jr99I_k41iOOvoFecfsXs"></div>
       <br/>
       <input type="submit" value="Submit">
-     <php>
-    $secret = "6Lcw0-EZAAAAAGPMSFVpiNfh6UPwf4ESh3QX2JfU";
-
-    // set post fields
-    $post = [
-        'secret' => 6Lcw0-EZAAAAAGPMSFVpiNfh6UPwf4ESh3QX2JfU,
-        'response' => $_POST['g-recaptcha-response'],
-        'remoteip'   => $_SERVER['REMOTE_ADDR']
-    ];
-
-    $ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-
-    // execute!
-    $response = curl_exec($ch);
-
-    // close the connection, release resources used
-    curl_close($ch);
-
-    // do anything you want with your response
-    // var_dump(json_decode($response)); // uncomment this to get the json full response
-    $array = json_decode($response,true);
-    //echo "<pre/>";print_r($array); // uncomment this to get the json to array full response/results
-
-    if($array['success'] == 1){
- ;
-    }
-    else{
-        echo "Challenge not accepted so far....";
-    }
-    </php>
     </form>
   </body>
 </html>
