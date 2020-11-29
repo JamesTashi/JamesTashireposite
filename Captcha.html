@@ -21,6 +21,14 @@ Thanks!
           'sitekey' : '6Lcw0-EZAAAAAFDI1i7jr99I_k41iOOvoFecfsXs'
         });
       };
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+    if (grecaptcha.getResponse() == "success") {
+        window.location.href = "https://drive.google.com/drive/folders/1zp_eqnxPZDB33VYGA1x-OzD4SBsOePwu?usp=sharing";
+
+        setTimeout(Redirect, 1000);
+    } else alert("You can't proceed!");
+<div data-type="image" class="g-recaptcha" data-sitekey="my-sitekey"></div>
     </script>
   </head>
   <body>
