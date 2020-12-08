@@ -2,7 +2,7 @@
 
 My website!
 
-Do not clone or modify my contents.
+Do not clone (fork) or modify my contents.
 
 If you are an editor, please contact me for any changes.
 
