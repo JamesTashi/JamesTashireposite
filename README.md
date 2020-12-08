@@ -8,4 +8,4 @@ If you are an editor, please contact me for any changes.
 
 https://jamestashi.github.io/JamesTashireposite/
 
-http://www.jamestashifx.tk
+https://www.jamestashifx.tk
