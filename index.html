@@ -10,6 +10,81 @@ div {text-align: center;}
 body {
   background-image: url('images/sunset-sky-1464251465jeD.jpg');
 }
+.header { 
+padding: 350px; 
+text-align: center; 
+background: url('https://github.com/JamesTashi/JamesTashireposite/blob/master/images/Dark_sunset1.jpg?raw=true'); 
+color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a: {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -56,16 +131,6 @@ body {
 }
 </style>
 </head>
-<body>
-<div class="topnav">
-  <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
-  <a href="https://jamestashi.github.io/JamesTashireposite/amznpdts.html"><i class="fa fa-amazon"></i> Amazon Links</a>
-  <a href="https://jamestashi.github.io/JamesTashireposite/dbotinfo.html"><i class="fa fa-cog"></i> Discord Bot</a>
-  <a href="https://jamestashi.github.io/JamesTashireposite/contact.html"><i class="fa fa-envelope"></i> Contact</a>
-  <a href="https://jamestashi.github.io/JamesTashireposite/about.html"><i class="fa fa-info-circle"></i> About</a>
-  <a href="https://jamestashi.github.io/JamesTashireposite/Note.html"><i class="fa fa-sticky-note"></i> Special Notes</a>
-</div>
-</style>
 <style>
 .navbar {
   overflow: hidden;
@@ -108,6 +173,26 @@ body {
 </pre>
 </div>
  
+ <div class="header">
+  <h1><picture>
+  <source media="(min-width:650px)" srcset="images/logo.png">
+  <source media="(min-width:465px)" srcset="images/logo.png">
+  <img src="images/logo.png" alt="logo" style="width:auto;">
+</picture></h1>
+  <p>SCROLL DOWN for the HOME PAGE</p>
+</div>
+ 
+<body>
+<div class="topnav">
+  <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
+  <a href="https://jamestashi.github.io/JamesTashireposite/amznpdts.html"><i class="fa fa-amazon"></i> Amazon Links</a>
+  <a href="https://jamestashi.github.io/JamesTashireposite/dbotinfo.html"><i class="fa fa-cog"></i> Discord Bot</a>
+  <a href="https://jamestashi.github.io/JamesTashireposite/contact.html"><i class="fa fa-envelope"></i> Contact</a>
+  <a href="https://jamestashi.github.io/JamesTashireposite/about.html"><i class="fa fa-info-circle"></i> About</a>
+  <a href="https://jamestashi.github.io/JamesTashireposite/Note.html"><i class="fa fa-sticky-note"></i> Special Notes</a>
+</div>
+</style>
+
 <h1> Welcome to James Tashi's website! </1>
 
 <script data-ad-client="ca-pub-4026365076485630" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
