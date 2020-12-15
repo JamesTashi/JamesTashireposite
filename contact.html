@@ -83,6 +83,64 @@ body {
   padding: 20px;
   margin-bottom: 50px;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.label:before{
+     content:"*" ;
+     color:red   
+     }
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 </style>
 </head>
 <body>
@@ -120,9 +178,44 @@ Follow me on Twitter: <a href="https://twitter.com/JamesTashi2?s=09">@JamesTashi
 <pre> 
 Or if you want to write down fast ASAP here:
 </pre> 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6JHwMRtI-rBjYpHaAqfyP7-hHVjldWEgrxPu9Kh8NEj5_0g/viewform?embedded=true" width="640" height="765" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="container">
+  <div style="text-align:center">
+    <h2>James Tashi's Contact information</h2>
+    <p>Please contact me and I will try get back to you within 3 days:</p>
+  </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name*</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name*</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="fname">Email*</label>
+        <input type="text" id="fname" name="firstname" placeholder="Email..">
+        <label for="country">Subject</label>
+        <select id="country" name="country">
+          <option value="australia">Legal</option>
+          <option value="canada">Fanmail</option>
+          <option value="usa">Question</option>
+          <option value="usa">Content Takedowns</option>
+          <option value="usa">Other</option>
+        </select>
+        <pre>
+Please note that support requests and questions related to irrelvant content are not accepted and will be ignored.
+        </pre>
+        <label for="subject">Message*</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <div class="wpforms-recaptcha-container">
+        <div class="g-recaptcha" data-sitekey="6Lcw0-EZAAAAAFDI1i7jr99I_k41iOOvoFecfsXs" data-recaptcha-id="0"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc556YZAAAAAIRgZ52zY4HKT7odwLqen2lf3w7r&amp;co=aHR0cHM6Ly93d3cuamFja3NvcnJlbGwudHY6NDQz&amp;hl=en&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=normal&amp;cb=z2ulphsoiuao" width="304" height="78" role="presentation" name="a-wlqf6lmhfhun" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><input type="text" name="g-recaptcha-hidden" class="wpforms-recaptcha-hidden" style="position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;" required=""></div>
+<pre>
+<input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
 
-  
+</body>
+</html>
+
 
   
   
