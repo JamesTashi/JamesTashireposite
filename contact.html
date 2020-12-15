@@ -58,7 +58,27 @@ body {
   bottom: 0;
   width: 100%;
 }
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+  
 .navbar a {
   float: left;
   display: block;
@@ -214,8 +234,11 @@ Please note that support requests and questions related to irrelvant content are
     </form>
   </body>
 <pre>
-<h1> Unfortunately we closed in-site submissions. 
-Please use my socials to reach me. </h1>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Notice:</strong> Unfortunately we temporary closed in-site submissions. 
+Please use my socials to reach me.
+</div>
       </form>
     </div>
   </div>
