@@ -7,6 +7,26 @@
 h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
+.alert {
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 body {
   background-image: url('images/greyish.png');
 }
@@ -149,6 +169,10 @@ Blake
 and
 Jatson.
 
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Notice:</strong> This website uses cookies to improve the website operations and offer ads. Please check out the <a href="https://jamestashi.github.io/JamesTashireposite/privacypolicy">Privacy Policy</a.> regarding the use of Cookies.
+</div>
 
 </1>
 </pre>
