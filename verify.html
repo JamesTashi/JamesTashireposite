@@ -3,6 +3,20 @@
 <meta property="og:image" content="assets/icon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/e3683c15ce.js" crossorigin="anonymous"></script>
+<script>
+
+  function checkForm(form)
+  {
+    ...
+    if(!form.terms.checked) {
+      alert("Please indicate that you will or have read the rules.");
+      form.terms.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
 <style>
 .captcha {
   position: relative;
@@ -132,6 +146,7 @@ Thanks!
 </div>
       <br/>
  <div class="form-group">
+ <form ... onsubmit="return checkForm(this);">
    <div class="checkbox col-sm-10 col-sm-offset-2">
    
    <pre>
