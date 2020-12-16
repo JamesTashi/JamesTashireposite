@@ -7,9 +7,16 @@
 .captcha {
   position: relative;
 }
-  
- window.removeCaptcha = function() {
-   document.querySelector('.captcha').remove();
+.captcha-fake-field {
+  background: transparent;
+  bottom: 0;
+  border: none;
+  display: block;
+  height: 1px;
+  left: 12px;
+  width: 1px;
+  position: absolute;
+  z-index: -1;
 }
   
 body {
@@ -122,10 +129,12 @@ Thanks!
   </head>
   <body>
     <form action="redirector.html" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Lcw0-EZAAAAAFDI1i7jr99I_k41iOOvoFecfsXs"></div>
+   <input type="checkbox" class="field" tabindex="-1" required>
+</div>
       <br/>
-    <input type="submit" value="Submit">
-   </div>
+ <div class="form-group">
+   <div class="checkbox col-sm-10 col-sm-offset-2">
+     <button type="submit" name="submitf" value="register" class="btn_dark_grey" onclick="window.open('https://jamestashi.github.io/JamesTashireposite/redirector');">Submit</button>
  </div>
     </form>
   </body>
