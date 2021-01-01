@@ -13,6 +13,27 @@
 h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
+
+.alert {
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 body {
   background-image: url('images/sunset-sky-1464251465jeD.jpg');
 }
@@ -230,9 +251,10 @@ Visit my Linktree for Future Socials!
 ----------------------------------------------------------
 </pre>
 
-<pre>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=208bfd4f-c586-4c99-9f79-2c62ae6744ac"></script>
-</pre>
+</div>
 
 ----------------------------------------------------------
 </pre>
