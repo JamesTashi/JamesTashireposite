@@ -1,1 +1,2 @@
+# James Tashi's Ads.txt file
 google.com, pub-4026365076485630, DIRECT, f08c47fec0942fa0
